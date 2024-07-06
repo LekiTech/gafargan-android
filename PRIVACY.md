@@ -18,5 +18,5 @@ We implement appropriate security measures to protect the analytics data.
 ## 6. Contact Us
 If you have any questions, please contact us at info@lekitech.io
 
-7. Changes to This Policy
+## 7. Changes to This Policy
 We may update this policy and will notify you of any changes by posting the new policy on this page.

@@ -11,7 +11,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.OnBackPressedCallback
 
 class MainActivity : ComponentActivity() {
-    val baseUrl = "https://gafalag.com";
+    // Base URL to handle relative paths in your local site
+    val baseUrl = "file:///android_asset/";
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val webView = WebView(this).apply {
@@ -26,7 +28,7 @@ class MainActivity : ComponentActivity() {
                 override fun shouldOverrideUrlLoading(view: WebView?, request: WebResourceRequest?): Boolean {
                     val url = request?.url.toString()
                     if (url.startsWith(baseUrl)) {
-                        return false // Allow loading the URL
+                        return false // Allow loading local files
                     }
                     return true // Block all other URLs
                 }
@@ -35,7 +37,12 @@ class MainActivity : ComponentActivity() {
             settings.javaScriptEnabled = true
             settings.domStorageEnabled = true
             settings.javaScriptCanOpenWindowsAutomatically = true
-            loadUrl(baseUrl)
+            settings.allowFileAccess = true
+            settings.allowFileAccessFromFileURLs = true
+            settings.allowUniversalAccessFromFileURLs = true
+
+            // Load the local index.html file from the assets folder
+            loadUrl(baseUrl + "index.html")
         }
         setContentView(webView)
 

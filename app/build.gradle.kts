@@ -5,14 +5,14 @@ plugins {
 
 android {
     namespace = "io.lekitech.gafargan"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "io.lekitech.gafargan"
         minSdk = 24
-        targetSdk = 34
-        versionCode = 3
-        versionName = "2.1"
+        targetSdk = 36
+        versionCode = 4
+        versionName = "2.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

@@ -1,10 +1,10 @@
-# Privacy Policy for Gafalag App
+# Privacy Policy for Gafargan App
 
 ## 1. Introduction
-Gafalag ("we," "our," or "us") respects your privacy. This privacy policy explains how we handle your data when you use our app.
+Gafargan ("we," "our," or "us") respects your privacy. This privacy policy explains how we handle your data when you use our app.
 
 ## 2. Data Collection
-We only collect analytics data using Yandex Metrika. No other personal information is collected or stored.
+We only collect analytics data using MixPanel on our website and we don't collect any data on our mobile app. No other personal information is collected or stored.
 
 ## 3. Data Usage
 We use the collected data to monitor app performance and analyze user interactions to improve the app.
